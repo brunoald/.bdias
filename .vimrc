@@ -40,6 +40,7 @@ NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'bbatsov/rubocop'
 
 " Required:
 call neobundle#end()
