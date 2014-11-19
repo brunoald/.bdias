@@ -25,7 +25,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'jeetsukumaran/vim-buffergator'
-NeoBundle 'airblade/vim-gitgutter'
+"NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Keithbsmiley/rspec.vim'
 NeoBundle 'majutsushi/tagbar'
@@ -41,6 +41,7 @@ NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'bbatsov/rubocop'
+NeoBundle 'kchmck/vim-coffee-script'
 
 " Required:
 call neobundle#end()
