@@ -1,4 +1,3 @@
-
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
   set nocompatible               " Be iMproved
@@ -69,3 +68,6 @@ let g:spec_runner_dispatcher = '! bundle exec {command} --color'
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:neocomplcache_enable_at_startup = 1
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-t> :tabnew<CR>
