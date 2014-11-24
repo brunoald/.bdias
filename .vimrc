@@ -41,6 +41,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'bbatsov/rubocop'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'tpope/vim-surround'
 
 " Required:
 call neobundle#end()
