@@ -42,6 +42,7 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'bbatsov/rubocop'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'Raimondi/delimitMate'
 
 " Required:
 call neobundle#end()
