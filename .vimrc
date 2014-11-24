@@ -73,3 +73,7 @@ let g:neocomplcache_enable_at_startup = 1
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
 map  <C-t> :tabnew<CR>
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
