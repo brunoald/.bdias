@@ -13,12 +13,8 @@ call neobundle#begin(expand('~/.vim/bundle'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Add or remove your Bundles here:
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/nerdcommenter'
@@ -35,7 +31,6 @@ NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 "NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-"NeoBundle 'honza/vim-snippets'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-endwise'
@@ -43,6 +38,27 @@ NeoBundle 'bbatsov/rubocop'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'xolox/vim-colorscheme-switcher'
+
+" Color schemes
+NeoBundle 'wombat256.vim'
+NeoBundle 'Zenburn'
+NeoBundle 'morhetz/gruvbox'
+NeoBundle 'Lokaltog/vim-distinguished'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'flazz/vim-colorschemes'
+
+" Snippets
+NeoBundle "MarcWeber/vim-addon-mw-utils"
+NeoBundle "tomtom/tlib_vim"
+NeoBundle 'garbas/vim-snipmate'
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
 
 " Required:
 call neobundle#end()
@@ -61,8 +77,8 @@ set hlsearch
 set expandtab tabstop=2 shiftwidth=2
 highlight clear SignColumn
 set encoding=utf-8
-colorscheme Tomorrow-Night
-set t_Co=256
+colorscheme apprentice
+"set t_Co=256
 set backspace=indent,eol,start
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
@@ -77,3 +93,4 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+nmap s <Plug>(easymotion-s)
