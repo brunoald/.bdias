@@ -21,7 +21,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rainerborene/vim-reek'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'Shougo/vimshell'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'ervandew/supertab'
@@ -34,6 +34,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'elzr/vim-json'
+Plugin 'sjl/gundo.vim'
 
 " Color schemes
 Plugin 'wombat256.vim'
@@ -79,3 +80,4 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 nmap s <Plug>(easymotion-s)
+nnoremap <C-u> :GundoToggle<CR>
