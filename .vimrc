@@ -1,75 +1,60 @@
-"NeoBundle Scripts-----------------------------
-if has('vim_starting')
-  set nocompatible               " Be iMproved
+set shell=/bin/bash
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 
-  " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-" Required:
-call neobundle#begin(expand('~/.vim/bundle'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'jeetsukumaran/vim-buffergator'
-"NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'Keithbsmiley/rspec.vim'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'gabebw/vim-spec-runner'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'rainerborene/vim-reek'
-NeoBundle 'kien/rainbow_parentheses.vim'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-"NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-NeoBundle 'Shougo/neocomplcache.vim'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'bbatsov/rubocop'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'Raimondi/delimitMate'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'xolox/vim-misc'
-NeoBundle 'xolox/vim-colorscheme-switcher'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'bling/vim-airline'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'Keithbsmiley/rspec.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'gabebw/vim-spec-runner'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'rainerborene/vim-reek'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/vimshell'
+Plugin 'Shougo/neocomplcache.vim'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-endwise'
+Plugin 'bbatsov/rubocop'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-surround'
+Plugin 'Raimondi/delimitMate'
+Plugin 'mattn/emmet-vim'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-colorscheme-switcher'
+Plugin 'elzr/vim-json'
 
 " Color schemes
-NeoBundle 'wombat256.vim'
-NeoBundle 'Zenburn'
-NeoBundle 'morhetz/gruvbox'
-NeoBundle 'Lokaltog/vim-distinguished'
-NeoBundle 'chriskempson/vim-tomorrow-theme'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'flazz/vim-colorschemes'
+Plugin 'wombat256.vim'
+Plugin 'Zenburn'
+Plugin 'morhetz/gruvbox'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
 
 " Snippets
-NeoBundle "MarcWeber/vim-addon-mw-utils"
-NeoBundle "tomtom/tlib_vim"
-NeoBundle 'garbas/vim-snipmate'
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
 
-" Required:
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-"End NeoBundle Scripts-------------------------
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 syntax on
 set number
